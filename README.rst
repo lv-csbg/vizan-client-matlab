@@ -8,12 +8,7 @@ A Matlab client for VizAn REST server
 Installation
 ------------
 
-vizan-client-matlab is distributed on ... is available on Linux/macOS and Windows and supports
-MATLAB R2018a.
-
-.. code-block:: matlab
-
-    $ matlab install vizan-client-matlab
+vizan-client-matlab is distributed on ? MATLAB Central ? and is available on Linux/macOS and Windows and supports MATLAB R2018a.
 
 Local Web server
 ________________
