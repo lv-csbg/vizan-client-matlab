@@ -62,6 +62,9 @@ test/</param.exclude.filters>
     <param.compatiblity.linux>true</param.compatiblity.linux>
     <param.compatiblity.matlabonline>true</param.compatiblity.matlabonline>
     <unset>
+      <param.authnamewatermark />
+      <param.email />
+      <param.company />
       <param.screenshot />
       <param.output />
       <param.products.name />
