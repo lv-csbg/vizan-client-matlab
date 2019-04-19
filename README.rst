@@ -8,19 +8,35 @@ A Matlab client for VizAn REST server
 Installation
 ------------
 
-vizan-client-matlab is distributed on ? MATLAB Central ? and is available on Linux/macOS and Windows and supports MATLAB R2018a.
+vizan-client-matlab is available on Linux/macOS and Windows and supports MATLAB R2018a but probably supports earlier versions too.
+
+You can use  MATLAB toolbox file. It is found under Releases.
+
+Or you can install toolbox manually. First, clone repo:
+
+.. code-block:: bash
+
+    $ git clone https://github.com/lv-csbg/vizan-client-matlab.git
+    $ cd vizan-client-matlab
+
+Then, in MATLAB:
+
+.. code-block:: matlab
+
+    addpath(genpath('vizan-client-matlab'))
 
 Local Web server
 ________________
 
 For local server you need to install `Docker <https://docs.docker.com/install/>`_ .
 On Linux also you should perform `post-installation steps <https://docs.docker.com/install/linux/linux-postinstall/>`_ .
+To download the needed docker image enter this command into Terminal:
 
 .. code-block:: bash
 
-    $ docker pull lvcsbg/tools:vizan-webserver
+    $ docker pull lvcsbg/tools:vizan-rest-server-slim
 
-And to run local server:
+And to run local server directly from MATLAB:
 
 .. code-block:: matlab
 
@@ -32,7 +48,7 @@ And to run local server:
 Usage
 -------------
 
-With local server running no need to provide url, so :
+With local server running there is no need to provide url, so :
 
 .. code-block:: matlab
 
