@@ -28,7 +28,7 @@ services:
       command: /bin/sh -c "envsubst < /etc/nginx/conf.d/nginx.tmpl > /etc/nginx/nginx.conf && exec nginx -g 'daemon off;'"
 
     webapp:
-      image: lvcsbg/tools:vizan-webserver
+      image: lvcsbg/tools:vizan-rest-server-slim
       volumes:
         - static-files:/srv/static-files
       expose:
