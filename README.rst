@@ -17,13 +17,13 @@ Or you can install toolbox manually. First, clone repo:
 .. code-block:: bash
 
     $ git clone https://github.com/lv-csbg/vizan-client-matlab.git
-    $ cd vizan-client-matlab
+    $ matlab -nodesktop -nojvm -r "addpath(genpath('vizan-client-matlab')); exit;"
 
-Then, in MATLAB:
+Or in MATLAB change working directory to git directory and:
 
 .. code-block:: matlab
 
-    addpath(genpath('vizan-client-matlab'))
+    addpath(genpath(pwd))
 
 Local Web server
 ________________
