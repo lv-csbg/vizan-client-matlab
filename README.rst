@@ -8,7 +8,7 @@ A Matlab client for VizAn REST server
 Installation
 ------------
 
-vizan-client-matlab is available on Linux/macOS and Windows and supports MATLAB R2018a and higher.
+vizan-client-matlab is available on Linux/macOS and Windows and supports MATLAB R2016b and higher.
 
 You can use  MATLAB toolbox file. It is found under Releases.
 
