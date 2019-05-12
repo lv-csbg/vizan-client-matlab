@@ -7,7 +7,7 @@
     <param.summary>A Matlab client for VizAn REST server</param.summary>
     <param.description>A Matlab client for VizAn REST server</param.description>
     <param.screenshot />
-    <param.version>0.1.0</param.version>
+    <param.version>0.2.0</param.version>
     <param.output>${PROJECT_ROOT}/vizan-client.mltbx</param.output>
     <param.products.name />
     <param.products.id />
@@ -54,9 +54,9 @@ test/</param.exclude.filters>
     </param.matlabpath.excludes>
     <param.javaclasspath.excludes />
     <param.exported.on.package>false</param.exported.on.package>
-    <param.release.start>R2018a</param.release.start>
-    <param.release.end>R2018a</param.release.end>
-    <param.release.current.only>true</param.release.current.only>
+    <param.release.start>R2016b</param.release.start>
+    <param.release.end>latest</param.release.end>
+    <param.release.current.only>false</param.release.current.only>
     <param.compatiblity.windows>true</param.compatiblity.windows>
     <param.compatiblity.macos>true</param.compatiblity.macos>
     <param.compatiblity.linux>true</param.compatiblity.linux>
@@ -79,6 +79,7 @@ test/</param.exclude.filters>
       <param.docs />
       <param.javaclasspath.excludes />
       <param.exported.on.package />
+      <param.release.current.only />
       <param.compatiblity.windows />
       <param.compatiblity.macos />
       <param.compatiblity.linux />
@@ -91,6 +92,7 @@ test/</param.exclude.filters>
       <file>${PROJECT_ROOT}/LICENSE</file>
       <file>${PROJECT_ROOT}/README.rst</file>
       <file>${PROJECT_ROOT}/doc</file>
+      <file>${PROJECT_ROOT}/examples.m</file>
       <file>${PROJECT_ROOT}/src</file>
     </fileset.rootfiles>
     <fileset.depfun.included />
@@ -150,7 +152,7 @@ test/</param.exclude.filters>
       <vista>false</vista>
       <linux>true</linux>
       <solaris>false</solaris>
-      <osver>4.15.0-47-generic</osver>
+      <osver>4.15.0-48-generic</osver>
       <os32>false</os32>
       <os64>true</os64>
       <arch>glnxa64</arch>
