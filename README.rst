@@ -55,8 +55,13 @@ With local server running there is no need to provide url, so :
     % To start server
     server = initVizAnLocalServer
     % When using local server 'url' parameter is not needed
-    res1 = visualise('model.json','model_map.svg','fba_result.svg', 'FBA');
-    res2 = visualise('iML1515.json','E_coli_source.svg','my_matlab_output_fba.svg', 'FBA');
+    % exampleHttpResponse = visualise('model.json','model_map.svg','fba_result.svg', 'FBA');
+    % 'model.json' - filename of a model;
+    % 'model_map.svg' - filename of a map, created based on model, explained in VizAn tutorial;
+    % 'fba_result.svg' - filename for result visualisation;
+    % 'FBA' - type of visualisation;
+    % exampleHttpResponse - returns HTTP response received from server, for info/debug purposes.
+    res = visualise('iML1515.json','E_coli_source.svg','my_matlab_output_fba.svg', 'FBA');
     % To stop server
     delete(server)
 
