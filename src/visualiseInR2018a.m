@@ -15,10 +15,5 @@ svgProvider = FileProvider(svgFile);
         [response,completedrequest,history] = send(request, url, options);
     end
 [response,~,~] = sendForm(modelProvider, svgProvider, analysisType, url);
-
-if response.StatusCode == 200
-    saveAndShowResult(response, outputFile, show)
-else
-    error("Status code is not 200");
-end
+handleResponse(response, outputFile, show)
 end

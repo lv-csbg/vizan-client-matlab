@@ -56,10 +56,5 @@ end
         [response,completedrequest,history] = send(request, url, options);
     end
 [response,~,~] = sendForm(model_data, svg_data, analysisType, url);
-
-if response.StatusCode == 200
-    saveAndShowResult(response, outputFile, show)
-else
-    error("Status code is not 200");
-end
+handleResponse(response, outputFile, show);
 end
